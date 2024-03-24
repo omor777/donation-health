@@ -5,7 +5,7 @@ const useDonationData = () => {
   const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
     setIsLoading(true);
-    fetch("/data.json")
+    fetch("./data.json")
       .then((res) => res.json())
       .then((data) => {
         setDonationData(data);

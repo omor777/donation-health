@@ -8,7 +8,7 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import Logo from "/Logo.png";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function NavList() {
   return (
@@ -85,7 +85,9 @@ export function Nav() {
   return (
     <Navbar className="mx-auto max-w-7xl shadow-none px-6 py-3">
       <div className="flex items-center justify-between text-blue-gray-900">
-        <img className="cursor-pointer" src={Logo} />
+        <Link to={"/"}>
+          <img className="cursor-pointer" src={Logo} />
+        </Link>
         <div className="hidden lg:block">
           <NavList />
         </div>
