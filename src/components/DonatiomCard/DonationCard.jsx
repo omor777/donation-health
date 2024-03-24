@@ -45,6 +45,7 @@ const DonationCard = ({ item }) => {
           <Typography
             style={{
               color: textColor,
+              marginTop:'16px'
             }}
             variant="h4"
             color="blue-gray"
